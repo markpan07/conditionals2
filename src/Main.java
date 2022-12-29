@@ -69,10 +69,24 @@ public class Main {
     }
 
 
-
-
     public static void task4 () {
         System.out.println("Задача 4");
+        int deliveryDistance = 55;
+        byte defaultDeliveryTime = 1;
+        boolean distanceIsLess20km = deliveryDistance < 20;
+        boolean distanceBetween20And60km = deliveryDistance >=20 && deliveryDistance < 60;
+        boolean distanceBetween60And100km = deliveryDistance >=60 && deliveryDistance <= 100;
+        boolean distanceIsMore100km = deliveryDistance > 100;
+
+        if (distanceIsLess20km) {
+            System.out.println("Доставка займет " + defaultDeliveryTime + " суток");
+        } else if (distanceBetween20And60km) {
+            System.out.println("Доставка займет " + (defaultDeliveryTime + 1) + " суток");
+        } else if (distanceBetween60And100km) {
+            System.out.println("Доставка займет " + (defaultDeliveryTime + 2) + " суток");
+        } else if (distanceIsMore100km) {
+            System.out.println("Доставки нет");
+        }
     }
 
     public static void task5 () {
