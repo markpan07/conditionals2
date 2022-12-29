@@ -29,6 +29,33 @@ public class Main {
 
     public static void task2 () {
         System.out.println("Задача 2");
+        char clientOS = 1;
+        int clientDeviceYear = 2015;
+        int deviceProductionYear = 2015;
+
+        if (deviceProductionYear >= clientDeviceYear) {
+            switch (clientOS) {
+                case 0:
+                    System.out.println("Установите версию приложения для iOS по ссылке");
+                    break;
+                case 1:
+                    System.out.println("Установите версию приложения для Android по ссылке");
+                    break;
+                default:
+                    System.out.println("У вас нет операционной системы :(");
+            }
+        } else {
+            switch (clientOS) {
+                case 0:
+                    System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+                    break;
+                case 1:
+                    System.out.println("Установите облегченную версию приложения для Android по ссылке");
+                    break;
+                default:
+                    System.out.println("У вас нет операционной системы :(");
+            }
+        }
     }
 
     public static void task3 () {
