@@ -91,6 +91,54 @@ public class Main {
 
     public static void task5 () {
         System.out.println("Задача 5");
+        byte monthNumber = 10;
+        String seasonName = "1";
+
+        if (monthNumber <= 12) {
+            switch (monthNumber) {
+                case 1:
+                    seasonName = "Зима";
+                    break;
+                case 2:
+                    seasonName = "Зима";
+                    break;
+                case 3:
+                    seasonName = "Весна";
+                    break;
+                case 4:
+                    seasonName = "Весна";
+                    break;
+                case 5:
+                    seasonName = "Весна";
+                    break;
+                case 6:
+                    seasonName = "Лето";
+                    break;
+                case 7:
+                    seasonName = "Лето";
+                    break;
+                case 8:
+                    seasonName = "Лето";
+                    break;
+                case 9:
+                    seasonName = "Осень";
+                    break;
+                case 10:
+                    seasonName = "Осень";
+                    break;
+                case 11:
+                    seasonName = "Осень";
+                    break;
+                case 12:
+                    seasonName = "Зима";
+                    break;
+            }
+
+            System.out.println(seasonName);
+
+        } else {
+                System.out.println("Проверьте номер месяца");
+            }
     }
 
 }
